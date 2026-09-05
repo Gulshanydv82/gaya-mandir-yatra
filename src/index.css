@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-sacred-maroon: #800000;
+  --color-sacred-saffron: #FF9933;
+  --color-warm-cream: #FFFDF0;
+  --color-warm-earth: #3D2B1F;
+  --color-warm-muted: #5C4D42;
+  --color-warm-border: #E6E2D3;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFDF0;
+  color: #3D2B1F;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark body,
+body.dark {
+  background-color: #1a120b;
+  color: #FFFDF0;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}

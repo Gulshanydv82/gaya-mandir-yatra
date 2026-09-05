@@ -1,0 +1,6 @@
+{
+  "name": "Purva Yatra",
+  "description": "Pilgrimage booking portal for Gaya temple yatra, Pind Daan rituals, pandit & hotel bookings, packages, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
